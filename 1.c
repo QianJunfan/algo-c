@@ -1,5 +1,6 @@
 /* leetcode 1 - two sum
  * Jan 19, 2026
+ * bf & 2p
  */
 
 /* brute force */
