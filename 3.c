@@ -40,4 +40,26 @@ int lengthOfLongestSubstring(char *s)
         return r;
 } 
 
+/* faster */
+int lengthOfLongestSubstring(char *s)
+{
+        int m[128] = {0};
 
+        int r = 0;
+        int l = 0;
+
+        for (int i = 0; s[i]; ++i) {
+                char c = s[i];
+
+                if (m[c] > l)
+                        l = m[c];
+
+                m[c] = i + 1;
+
+                int t = i - l + 1;
+                
+                r = r > t ? r : t;
+        }
+
+        return r;
+}
