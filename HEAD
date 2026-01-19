@@ -1,0 +1,6 @@
+This repository contains my C solutions for LeetCode.
+
+miniutils:
+        sc.py: A tool for generating activity logs and heatmaps.
+        push.sh: A utility script for quick Git pushes.
+
