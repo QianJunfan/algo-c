@@ -144,3 +144,32 @@ struct N *addTwoNumbers(struct N *l1, struct N *l2)
 
         return h.next;
 }
+
+
+/* recursion */
+#define N struct ListNode
+int f = 0;
+
+N *addTwoNumbers(N *l1, N *l2)
+{
+        if (!l1 && !l2 && !f)
+                return NULL;
+
+        int s = f;
+
+        if (l1)
+                s += l1->val;
+        if (l2)
+                s += l2->val;
+
+        f = s / 10;
+
+        N *n = malloc(sizeof(N));
+        n->val = s % 10;
+        n->next = addTwoNumbers(
+                l1 ? l1->next : NULL,
+                l2 ? l2->next : NULL
+        );
+
+        return n;
+}
