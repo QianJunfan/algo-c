@@ -3,7 +3,7 @@
  */
 
 
-/* combine */
+/* combination */
 double findMedianSortedArrays(int *a, int n, int *b, int m)
 {
 	int s = n + m;
@@ -28,7 +28,7 @@ double findMedianSortedArrays(int *a, int n, int *b, int m)
 }
 
 
-/* no combination */
+/* no combination / bs */
 double findMedianSortedArrays(int *a, int n, int *b, int m)
 {
 	if (n > m)
