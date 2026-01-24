@@ -12,13 +12,14 @@ Activity log and heatmap provided by sc.py.
         Wed ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░
         Thu ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ▒
         Fri ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░
-        Sat ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ▒
+        Sat ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ▓
 
         Latest: 2026-01-24, ░:[0], ▒:(0,3], ▓:(3,8], █:(8,∞), *:Future
         ---------------------------------------------------------------
 
 
 Jan 24, 2026:
+        leetcode 8 - string to integer atoi                                [8.c]
         leetcode 5 - longest palindromic substring                         [5.c]
         leetcode 6 - zigzag conversion                                     [6.c]
         leetcode 7 - reverse integer                                       [7.c]
