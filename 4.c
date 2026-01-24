@@ -2,7 +2,6 @@
  * Jan 22, 2026
  */
 
-
 /* combination */
 double findMedianSortedArrays(int *a, int n, int *b, int m)
 {
