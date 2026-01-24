@@ -13,6 +13,7 @@
 
 #define test longestPalindrome
 
+/* brute force */
 char *longestPalindrome(char *s)
 {
         int f = 0;
@@ -59,3 +60,35 @@ char *longestPalindrome(char *s)
 }
 
 
+/* manacher */
+char *longestPalindrome(char *str)
+{
+        int n = 2 * strlen(str) + 3;
+
+        char *s = malloc(n * sizeof(char));
+
+        s[0] = '^';
+        
+        for (int i = 0; i < n; ++i) {
+                t[2 * i + 1] = '#';
+                t[2 * i + 2] = s[i];
+        }
+
+        t[2 * n + 1] = '#';
+        t[2 * n + 2] = '$';
+
+        int *p = calloc(n, sizeof(int));
+
+        int c = 0;
+        int r = 0;
+        int max = 0;
+        int idx = 0;
+
+        for (int i = 1; i < n - 1; ++i) {
+                if (i < r) {
+                        p[i] = MIN(r - i, p[2 * c - i]);
+                } else {
+                        p[i] = 1;
+                }
+        }
+}
